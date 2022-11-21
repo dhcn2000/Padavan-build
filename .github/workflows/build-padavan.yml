@@ -47,7 +47,7 @@ jobs:
         TNAME: K2P
         KERNEL: 3.4
       run: |
-        sed -i 's#https://bintray.com/htop/source/download_file?file_path=htop-3.0.2.tar.gz#https://raw.githubusercontent.com/hanwckf/rt-n56u/master/trunk/user/htop/htop-3.0.2.tar.gz#g' $work_dir/user/htop/Makefile
+        sed -i 's#https://bintray.com/htop/source/download_file?file_path=htop-3.0.2.tar.gz#https://codeload.github.com/htop-dev/htop/tar.gz/refs/tags/3.0.2#g' /opt/rt-n56u/trunk/user/htop/Makefile
         cd /opt/rt-n56u/trunk
         if [ ! -f configs/templates/$TNAME.config ] ; then
         echo "configs/templates/$TNAME.config not found "
