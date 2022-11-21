@@ -47,6 +47,7 @@ jobs:
         TNAME: K2P
         KERNEL: 3.4
       run: |
+        cp -f htop-3.0.2.tar.gz /opt/rt-n56u/trunk/user/htop/
         cd /opt/rt-n56u/trunk
         if [ ! -f configs/templates/$TNAME.config ] ; then
         echo "configs/templates/$TNAME.config not found "
